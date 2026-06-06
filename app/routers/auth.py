@@ -55,3 +55,10 @@ def get_user(access_token: str = Cookie(None)):
     return {
         "email": payload["email"]
     }
+
+@router.post("/logout")
+def logout(response: Response):
+    response.delete_cookie(
+        key="access_token"
+    )
+    return {"message": "Logged out"}

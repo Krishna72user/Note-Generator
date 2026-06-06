@@ -1,5 +1,4 @@
 from app.schemas.user import RegisterRequest,LoginRequest
-from app.db.database import get_connection
 from fastapi import HTTPException
 
 import bcrypt
