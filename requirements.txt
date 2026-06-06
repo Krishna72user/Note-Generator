@@ -1,0 +1,7 @@
+fastapi[standard]
+google-genai
+markdown
+playwright
+psycopg[binary]
+bcrypt
+pyjwt
